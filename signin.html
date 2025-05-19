@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+
+  <!-- Link to external CSS (optional if using shared styles) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* Sign In Section Styling */
+    .signin {
+      width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      color: #361609;
+      font-size: 20px;
+    }
+
+    .signin h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 32px;
+      color: rgb(235, 229, 187);
+    }
+
+    .signin form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signin label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .signin input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .signin button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #361609;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .signin button:hover {
+      background-color: #5a2a0a;
+    }
+
+    /* Basic Nav Styling to Match Main Page */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 36px;
+      font-weight: bold;
+      color: #361609;
+      font-family: "Trade Winds", system-ui;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 28px;
+    }
+
+    body {
+      background-image: linear-gradient(to right, rgba(209, 182, 124, 0.847), rgba(119, 36, 4, 0.847));
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: rgb(235, 229, 187);
+      font-family: "Trade Winds", system-ui;
+      margin: 0;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo-container">
+      <span class="logo-text">Bean and Brew</span>
+    </div>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="signin">
+  <h2>Login to Your Account</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required/>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required/>
+
+    <button type="submit">Sign In</button>
+  </form>
+</section>
+
+</body>
+</html>

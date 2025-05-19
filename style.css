@@ -145,7 +145,7 @@ nav ul li a {
 }
 
 /* Image on the Left */
-.image-container2 {
+/*.image-container2 {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -165,27 +165,101 @@ nav ul li a {
     padding: 0;
 }
 
-/* Welcome Text on the Right */
-.about desserts {
+.about-desserts {
     flex: 1;
-    text-align: left;
+    text-align: right;
+    color: #361609;
+    font-size: 40px;
+    margin-bottom: 40px;
+}*/
+.desserts-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    mix-blend-mode: multiply;
+}
+
+.side-image {
+    max-width: 85%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-desserts {
+    flex: 1;
+    text-align: right;
     color: #361609;
     font-size: 40px;
     margin-bottom: 40px;
 }
+.why-us{
+    flex: 1;
+    text-align: center;
+    color: #361609;
+    font-size: 35px;
+}
+.image-container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 30px 0; /* Adds 30px space below this row */
+    mix-blend-mode: multiply;
+}
+
+.coffee1, .coffee2, .coffee3 {
+    width: 30%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image-container4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    mix-blend-mode: multiply;
+}
+
+.dessert1, .dessert2, .dessert3 {
+    width: 30%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 /* About Us Section */
 .about-us {
     text-align: left;
     padding-left: 40px;
     padding-top: 20px;
+     flex: 1;
+    text-align: center;
+    color: #361609;
+    
 }
 
 .about-us h3 {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
 .about-us p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
 }
